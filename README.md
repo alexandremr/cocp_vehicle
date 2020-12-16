@@ -14,4 +14,4 @@ Version | ROS Distro | Operating System
 The desired path is represented represented by piecewise linear segments. The search for the corresponding point involves sequentially inspecting each path segment to determine if the vehicle lies along that portion of the path. The desired trajectory is known and composed of 2.5 cm sized linear segments arranged in a vector structure, which is given in the configuration files [yaml](https://github.com/alexandremr/cocp_vehicle/tree/main/config)
 
 ## Control policy
-The convex optimization problem is embedded into the package as a a custom C code [(cvxgen)](https://github.com/alexandremr/cocp_vehicle/tree/main/include/cvxgen) that compiles into a high-speed solver. We use the CVXGEN tool.
+The convex optimization problem is embedded into the package as a a custom C code [cvxgen](https://github.com/alexandremr/cocp_vehicle/tree/main/include/cvxgen) that compiles into a high-speed solver. We use the CVXGEN tool.
