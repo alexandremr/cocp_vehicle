@@ -1,0 +1,9 @@
+<launch>
+	  <!-- <machine default="false" name="verde" address="leve-arqueiro" user="leve" password="leveleve" env-loader="/home/leve/ros/verde/src/verde/verde_env.sh"/> -->
+	<node pkg="cocp_vehicle" name="control_policies" type="control_policies" output="screen">
+		<rosparam command="load" file="$(find cocp_vehicle)/config/cocp_circuit.yaml"/>
+		<!-- <remap from="imu/data" to="xsens/imu"/> -->
+	</node>
+
+	<!-- <node pkg="rosbag" type="record" name="record" args="-a -o /home/leve/Desktop/cocp/" machine="verde"/> -->
+</launch>
